@@ -1,7 +1,7 @@
 // SiteReference.swift
 // 12/26/20
 
-public enum SiteReference {
+public enum SiteReference: Hashable {
     case authority(_ siteAuthority: String, useHTTPS: Bool = true) // ex. "reddit.com" or "veganfoody.tumblr.com"
     case pageURL(_ urlString: String) // ex. "https://www.youtube.com/user/HumbleMechanic"
     
